@@ -24,6 +24,7 @@
 
 #include "util.h"
 #include "engine.h"
+#include "renderer.h"
 
 int
 main(void)

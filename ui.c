@@ -19,22 +19,6 @@
  * yume. If not, see <https://www.gnu.org/licenses/>.
  */
 
-#ifndef RENDERER_H
-#define RENDERER_H
+#include "ui.h"
 
-// Includes
-
-#include <epoxy/gl.h>
-
-// Prototypes
-
-// Print GL information
-void print_gl_info(void);
-// Initialize a vertex buffer object
-void vboinit(GLsizeiptr size, const GLvoid *data);
-// Initialize a vertex array object
-void vaoinit(GLuint index, GLint size, GLsizei stride);
-// Make a shader from a source file
-GLuint makeshader(const GLenum type, const char path[]);
-
-#endif // RENDERER_H
+#include <gtk/gtk.h>

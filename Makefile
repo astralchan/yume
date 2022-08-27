@@ -32,14 +32,16 @@ PREFIX  = /usr/local
 
 all: yume
 
-yume: yume.o util.o engine.o
-	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ yume.o util.o engine.o
+yume: yume.o util.o engine.o renderer.o ui.o
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ yume.o util.o engine.o renderer.o ui.o
 yume.o: yume.c util.h engine.h
 util.o: util.c util.h
 engine.o: engine.c engine.h
+renderer.o: renderer.c renderer.h util.h
+ui.o: ui.c ui.h
 
 clean:
-	@rm -f yume yume.o util.o engine.o
+	@rm -f yume yume.o util.o engine.o renderer.o ui.o
 
 # Install rules
 

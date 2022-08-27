@@ -50,7 +50,9 @@ make install
 ![GPL logo](.img/gpl-logo.png)
 
 `yume` is released under GPLv3 or later. SPDX identifier: `GPL-3.0-or-later`.
-For more information, see `COPYING`.
+For more information, see [`COPYING`](./COPYING), or if more recent,
+[https://gnu.org/licenses/gpl.html](https://gnu.org/licenses/gpl.html) for
+details.
 
 ## Contact
 
